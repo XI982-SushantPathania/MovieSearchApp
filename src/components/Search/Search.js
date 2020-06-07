@@ -44,8 +44,8 @@ console.log("S!!!!",movieState.movieSearchData)
     <>
     {movieState.isLoading ? 
     <Loader/>:null}
+         <Header/>
     <div className={styles.formContainer}>
-      <Header/>
     <form className={styles.search}>
       <div>
       <input

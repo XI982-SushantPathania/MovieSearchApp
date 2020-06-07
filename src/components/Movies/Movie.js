@@ -35,7 +35,7 @@ const Movie = (props) => {
             )
         })}
         </Grid>
-           : ("!!No related movies found")}
+           : ("No movies found!!")}
       </div>
     
   );

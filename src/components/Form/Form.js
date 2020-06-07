@@ -70,11 +70,12 @@ const Form = () => {
         <>
         {LoginCredentialsState.isLoading ? 
         <Loader/>:null}
+        <div className={styles.formSection}>
         <div className={styles.login}>
             <form onSubmit={handleSubmit}>
                 <h1> Login </h1>
                 <div>
-            <label>username</label>
+            <label>Username</label>
             <div className={styles.error}>
                 <input 
                 name = "username"
@@ -100,6 +101,7 @@ const Form = () => {
                 {errors.authenticate && <p>{errors.authenticate}</p>}
                 </div>
                 </form>
+            </div>
             </div>
             </>
 

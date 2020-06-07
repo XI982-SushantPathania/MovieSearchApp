@@ -1,11 +1,26 @@
 import React from "react";
+import styles from './Header.css';
+import {useHistory,Redirect,withRouter} from "react-router-dom";
 
-const Header = ()=> {
+
+const Header =()=> {
+    let history = useHistory();
+
+
+    const doLogout=()=>{
+        event.preventDefault();
+        history.push(" ");
+        window.location.reload();
+    }
+
   return (
-    <header className="App-header">
-      <h2>"Welcome to movie Search"</h2>
-    </header>
+      <div className={styles.header}>
+    {/* <header  > */}
+      <h3> Welcome To Movie Search!!</h3>
+      <h2 onClick={doLogout}>logout</h2>
+    {/* </header> */}
+    </div>
   );
 };
 
-export default Header;
+export default withRouter(Header);

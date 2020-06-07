@@ -1,4 +1,18 @@
- .login {
+
+.formSection {
+  font-family: swissNormal;
+  background-image: url("../../assets/movieposter.jpg")!important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+}
+.login {
+  /* background-image: url("../../assets/movieposter.jpg")!important; */
     padding: 40px;
     background-color: #fff;
     width: 330px;
@@ -11,8 +25,8 @@
   .login label {
     display: block;
     font-family: swissBold;
-    color: #999;
-    font-size: 14px;
+    color:brown;
+    font-size: 16px;
     padding-bottom: 10px;
     text-align: left;
   }
