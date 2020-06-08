@@ -23,7 +23,6 @@ const loginCredentialsReducer = (state = initialState, action) => {
                 isLoading: false,
             };
         case actionTypes.POST_LOGIN_SUCCESS:
-            console.log("insidereducer",action.payload)
             return {
                 ...state,
                 movieData: action.payload,

@@ -23,7 +23,6 @@ const searchReducer = (state = initialState, action) => {
                 isLoading: false,
             };
         case actionTypes.POST_SEARCH_SUCCESS:
-            console.log("insideSEARCHreducer",action.payload)
             return {
                 ...state,
                 movieSearchData: action.payload,

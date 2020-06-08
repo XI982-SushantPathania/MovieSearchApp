@@ -1,10 +1,7 @@
 .header{
     background-color:yellowgreen;
-    /* position:static; */
     height: 80px;
     padding-top: 10px;
-    /* align-content: center; */
-    /* color: white; */
 }
 .header h3{
     float: left;
@@ -13,18 +10,11 @@
     font-style: italic;
     font-weight: bolder;
     font-size: x-large;
-
-    
 }
 .header h2{
     float: right;
     margin-right: 5%;
     color: wheat;
     cursor: pointer;
-
 }
-   /* .header h2 {
-    float: right;
-    color:white;
-    margin-right: 5%;
-} */
+   

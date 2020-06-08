@@ -9,7 +9,6 @@ export const postSearch = searchValue =>(
         });
         axios(`https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b`)
             .then(response => {
-                console.log("response",response.data.Response);
                 const actionPayload = response.data;
                 dispatch({
                     type: actionTypes.POST_SEARCH_SUCCESS,
@@ -20,14 +19,10 @@ export const postSearch = searchValue =>(
                 });
             })
             .catch(error => {
-                console.log("error",error);
                 dispatch({
                     type: actionTypes.POST_SEARCH_FAILURE,
                     payload: error.response.message ? error.response.message : 'Movie not Found',
                 });
-                setTimeout(() => (dispatch({
-                    type: actionTypes.HIDE_LOADER
-                })), 2000);
             })
     }
 );

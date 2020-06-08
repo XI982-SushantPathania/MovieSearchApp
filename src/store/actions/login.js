@@ -1,8 +1,6 @@
 import * as actionTypes from '../constants';
 import axios from 'axios';
 
-
-
 export const postLoginCredentials = (credentials) => (
     (dispatch) => {
         dispatch({
@@ -10,7 +8,6 @@ export const postLoginCredentials = (credentials) => (
         });
         axios.post(`http://www.omdbapi.com/?t=${credentials.username}&y=${credentials.password}&apikey=937ce691`)
             .then(response => {
-                console.log("response",response.data.Response);
                 const actionPayload = response.data;
                 dispatch({
                     type: actionTypes.POST_LOGIN_SUCCESS,
@@ -21,7 +18,6 @@ export const postLoginCredentials = (credentials) => (
                 });
             })
             .catch(error => {
-                console.log("error",error);
                 dispatch({
                     type: actionTypes.POST_LOGIN_FAILURE,
                     payload: error.response.message ? error.response.message : 'Profile not Found',

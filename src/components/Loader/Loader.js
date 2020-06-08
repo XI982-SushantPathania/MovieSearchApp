@@ -2,7 +2,7 @@ import React from 'react';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import classes from './Loader.css';
 
-const loader  = (props) => {
+const loader  = () => {
   return (
     <div className={classes.loaderOverlay}>
       <div className={classes.loaderBody}>
