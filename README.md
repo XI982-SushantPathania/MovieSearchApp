@@ -1,21 +1,21 @@
-Project Name & Pitch
+#  Project Name & Pitch
 
-MovieSearchApp
+## MovieSearchApp
 
 An application used to search movie data based on user preference, built with React, Redux, JavaScript, and CSS.
 
-Installation and Setup Instructions
-Example:
+Installation and Setup Instructions:
+
 Clone down this repository. You will need node and npm installed globally on your machine.
 
 Installation:
 
-npm install
+`npm install`
 
 To Start Server:
 
-npm start
+`npm start`
 
 To Visit App:
 
-localhost:8081
+`localhost:8081`
