@@ -54,7 +54,7 @@ export const Form = () => {
         if (LoginCredentialsState.movieData != null) {
             if (LoginCredentialsState.movieData.Response == "False") {
                 let errors = {};
-                errors = " Incorrect Userame or Password";
+                errors = " Incorrect Username or Password";
                 setErrors({
                     authenticate: errors
                 })
